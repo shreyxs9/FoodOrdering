@@ -1,0 +1,33 @@
+
+.header-logo img{
+    width: 5rem;
+    height: 5rem;
+
+}
+.header{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border:1px solid black;
+    width: 100%;
+    height: max-content;
+}
+.nav-bar {
+    width: 35%;
+    display: flex;
+}
+.nav-bar > ul  {
+display: flex;
+list-style-type: none;
+justify-content: space-around;
+align-items: center;
+width: 100% ;
+
+}
+.nav-bar > ul >li  {
+    padding: 1%;
+    margin-right: 2%;
+}
