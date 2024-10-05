@@ -1,12 +1,13 @@
 import './Body.css';
-import img from  './assets/logo.png';
-
-const ResCards = ()=>{
+const ResCards = (props)=>{
     return(
         <div className="card">
-       <img src={img} alt="" />
+       <img src={props.img} alt="" />
        <div className="card-text">
-        <h3>Megahana foods</h3>
+        <h3>{props.resName}</h3>
+        <h4>{props.cusines}</h4>
+<h4>4.4 stars</h4>
+<h4>38 minutes</h4>
         </div>
        </div> 
     );
@@ -14,9 +15,14 @@ const ResCards = ()=>{
 
 const Body = () =>{
 return (
-    <div className="body-comp">
+    <div className="body-comp">  
         <div className='search'>Search</div>
-        <ResCards/>
+        <div className="rescollection">
+        <ResCards resName="Megahana foods" cusines="Biryani, North Indian, Asian" img='./src/assets/biryani.jpg'/>
+        <ResCards resName="KFC" cusines="fast food" img={"./src/assets/burger.jpg"}/>
+        
+        </div>
+       
     </div>
 );
 };
