@@ -1,19 +1,19 @@
 import img from  './assets/logo.png';
-import './Header.css'
+import {Link} from "react-router-dom"
 const Header = () =>{
     return (
-<div className="header">
-  <div className="header-logo"> <img src={img} alt="" />
+<div className="flex justify-between items-center">
+  <div className="w-20"> <img src={img} alt="" />
   </div> 
-  <div className='nav-bar'>
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Contact US</li>
-      <li>Cart</li>
+  
+    <ul className='flex'>
+      <li className='mx-4'><Link to="/">Home</Link></li>
+      <li className='mx-4'><Link to="/about">About Us</Link></li>
+      <li className='mx-4'>Contact US</li>
+      <li className='mx-4'><Link to ="/grocery">Grocery</Link></li>
+      <li className='mx-4'>Cart</li>
     </ul>
-    </div> 
-</div>    
+</div>     
 )};
  
 export default Header;
