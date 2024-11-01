@@ -7,6 +7,7 @@ import {createBrowserRouter ,RouterProvider} from 'react-router-dom' ;
 import  About from './About.jsx'
 import Error from './Error.jsx';
 import RestrauntMenu from './RestrauntMenu.jsx'
+import Cart from './Cart.jsx'
 const Grocery = lazy(() => import("./Grocery.jsx"));
 
 
@@ -30,6 +31,10 @@ const appRouter = createBrowserRouter([
   {
     path:'/restraunts/:resId',
     element:<RestrauntMenu/>
+  },
+  {
+    path:'/cart',
+    element:<Cart/>
   },
   
 ],
